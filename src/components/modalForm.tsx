@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'antd';
-import {  } from 'next/link'
 import FormL from './forms';
 
 interface dados {
@@ -33,7 +32,7 @@ const ModalForm: React.FC<dados> = (dados) => {
             {dados.textoBotao}
           </Button>
           <Modal title={dados.title} visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-            <FormL incluir={dados.objUser.id ? false : true } objeto={{...dados.objUser}} showModal={() => handleOk()} />
+            <FormL incluir={dados.objUser.id ? false : true } objeto={{role: 0,...dados.objUser}} showModal={() => handleOk()} />
           </Modal>
         </div>
       );

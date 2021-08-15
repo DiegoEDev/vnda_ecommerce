@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import Users from '../components/UsersControllees';
-import { listUser } from "../components/functions/users";
 const Home: React.FC = () => {
   
   
